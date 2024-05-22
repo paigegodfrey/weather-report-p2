@@ -10,7 +10,7 @@
 
 
 ## Bug #3
-<b>Bug</b>: Day component doesn't destructure props correct;y; student is new to this concept, solidify their understanding (Step 4)
+<b>Bug</b>: Day component doesn't destructure props correctly; student is new to this concept, solidify their understanding (Step 4)
 <br>
 
 
