@@ -7,15 +7,7 @@ const formatDate = (dateString) => {
   return new Date(dateString).toLocaleDateString(undefined, options);
 };
 
+// BUG #1
 // Parse the data for use in components, including the weather icon
-const parseForecastData = (forecastData) => {
-  return forecastData.list.map(data => ({
-    date: formatDate(data.dt_txt),
-    temperature: kelvinToFahrenheit(data.main.temp),
-    weather: data.weather[0].main,
-    description: data.weather[0].description,
-    icon: data.weather[0].icon // Added the weather icon
-  }));
-};
 
 export { kelvinToFahrenheit, formatDate, parseForecastData };

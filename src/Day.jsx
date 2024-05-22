@@ -1,7 +1,6 @@
-import React from 'react'
 import './Day.css'
 
-function Day({ date, temperature, weather, icon }) {
+function Day(date, temperature, weather, icon) {
 
   const temperatureClass = temperature < 60 ? "cold" : "hot";
 

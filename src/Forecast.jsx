@@ -1,4 +1,3 @@
-import React from 'react'
 import Day from './Day'
 import './Forecast.css'
 
@@ -10,9 +9,9 @@ function Forecast({ data }) {
 
   return (
     <div className="forecast-container">
-      {parsedData.map(day => (
-        <div className="forecast-card" key={day.date}>
-          <Day date={day.date} temperature={day.temperature} weather={day.weather} icon={day.icon} />
+      {parsedData.map((
+        <div className="forecast-card" key={parsedData.date}>
+          <Day date={parsedData.date} temperature={parsedData.temperature} weather={parsedData.weather} icon={parsedData.icon} />
         </div>
       ))}
     </div>
@@ -20,4 +19,3 @@ function Forecast({ data }) {
 }
 
 export default Forecast
-
